@@ -1,0 +1,48 @@
+/* The navigation bar */
+nav {
+  overflow: hidden;
+  background-color: rgb(229, 241, 206);
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border: solid rgb(80, 77, 77) 1px;
+}
+
+.nav a{
+  text-decoration: none;
+  color: black;
+  padding: 1%;
+}
+
+/* Change the color of links on hover */
+.nav a:hover {
+  background-color: rgb(100, 199, 60);
+  color: black;
+  cursor: pointer;
+}
+
+/* Hide hamburger link that should open and close the nav on small screens */
+.nav .icon {
+  display: none;
+  color:black
+}
+
+/*Hero Image */
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+}
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}

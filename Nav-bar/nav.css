@@ -1,26 +1,26 @@
 /* The navigation bar */
 nav {
   overflow: hidden;
-  background-color: rgb(196, 224, 143);
+  background-color: rgb(229, 241, 206);
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  border-top: solid rgb(253, 28, 28) 1px;
+  border: solid rgb(80, 77, 77) 1px;
 }
 
+.nav a{
+  text-decoration: none;
+  color: black;
+  padding: 1%;
+}
 
 /* Change the color of links on hover */
 .nav a:hover {
-  background-color: rgb(50, 146, 12);
+  background-color: rgb(100, 199, 60);
   color: black;
   cursor: pointer;
-}
-
-/* Add an active class to highlight the current page */
-.active {
-  background-color:rgb(74, 66, 107);
 }
 
 /* Hide hamburger link that should open and close the nav on small screens */
