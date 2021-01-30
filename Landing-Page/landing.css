@@ -24,6 +24,7 @@ nav {
   background-color: rgb(100, 199, 60);
   color: black;
   cursor: pointer;
+  border: solid 1px gold;
 }
 
 /* Hide hamburger link that should open and close the nav on small screens */
@@ -70,7 +71,7 @@ nav {
 /* Buttons used to open and close the accordion panel */
 .accordion {
   background-color:  rgb(229, 241, 206);
-  color: #444;
+  color: black;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -84,6 +85,7 @@ nav {
 /* Background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
   background-color:  rgb(100, 199, 60);
+  border: solid 1px gold;
 }
 
 /* Accordion panel. Note: hidden by default */
@@ -122,5 +124,6 @@ footer a{
 footer a:hover{
   background: rgb(34, 33, 33);
   padding: 0.5%;
+  border: solid 1px gold;
 }
 
