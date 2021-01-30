@@ -1,3 +1,6 @@
+a{
+  text-decoration: none;}
+
 /* The navigation bar */
 nav {
   overflow: hidden;
@@ -12,7 +15,6 @@ nav {
 }
 
 .nav a{
-  text-decoration: none;
   color: black;
   padding: 1%;
 }
@@ -56,15 +58,18 @@ nav {
 .container i{
   position: absolute;
   bottom: 15px;
-  left: 50%;
+  left: 49%;
   color: black;
 }
 
 /*About Section */
+.about h2{
+  text-align: center;
+}
 
-/* Style the buttons that are used to open and close the accordion panel */
+/* Buttons used to open and close the accordion panel */
 .accordion {
-  background-color: #eee;
+  background-color:  rgb(229, 241, 206);
   color: #444;
   cursor: pointer;
   padding: 18px;
@@ -73,17 +78,49 @@ nav {
   border: none;
   outline: none;
   transition: 0.4s;
+  text-align: center;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+/* Background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
-  background-color: #ccc;
+  background-color:  rgb(100, 199, 60);
 }
 
-/* Style the accordion panel. Note: hidden by default */
+/* Accordion panel. Note: hidden by default */
 .panel {
   padding: 0 18px;
   background-color: white;
   display: none;
   overflow: hidden;
 }
+
+.list{
+  padding-left: 45%;
+}
+
+footer{
+  background-color: #444;
+  padding: 10px;
+}
+
+.content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1%;
+}
+
+footer span{
+  color:white;
+}
+
+footer a{
+  color: white;
+  cursor: pointer;
+}
+
+footer a:hover{
+  background: rgb(34, 33, 33);
+  padding: 0.5%;
+}
+
