@@ -5,11 +5,30 @@ body{
   font-family: 'Lato', sans-serif;
 }
 
-a{text-decoration: none;}
+a{
+  text-decoration: none;
+  cursor: pointer;
+  }
 
-h2{
+a:hover{
+  background-color: rgb(100, 199, 60);
+  color: black;
+  cursor: pointer;
+  border: solid 1px gold;
+}
+
+p{
+  background-color: white;
+  text-align: center;
+  padding: 1%;
+}
+
+h1{
   text-align: center;
   text-shadow: 1px 1px  rgb(100, 199, 60);
+  background-color: rgb(229, 241, 206);
+  padding: 1%;
+  margin-top: 0;
 }
 
 
@@ -31,13 +50,6 @@ nav {
   padding: 1%;
 }
 
-/* Change the color of links on hover */
-.nav a:hover {
-  background-color: rgb(100, 199, 60);
-  color: black;
-  cursor: pointer;
-  border: solid 1px gold;
-}
 
 /* Hide hamburger link that should open and close the nav on small screens */
 .nav .icon {
@@ -67,11 +79,42 @@ nav {
 }
 
 
+/*PORTFOLIO GALLERY */
+
+main a{
+  background-color:rgb(229, 241, 206);
+  padding: 1%;
+}
 
 
 
+/*FOOTER */
+footer{
+  background-color: #444;
+  padding: 10px;
+}
 
+.content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1%;
+}
 
+footer span{
+  color:white;
+}
+
+footer a{
+  color: white;
+  cursor: pointer;
+}
+
+footer a:hover{
+  background: rgb(34, 33, 33);
+  padding: 0.5%;
+  border: solid 1px gold;
+}
 
 
 /* Responsive Layout for Break-Points */
