@@ -5,10 +5,11 @@ body{
   font-family: 'Lato', sans-serif;
 }
 
-main a{
-  background-color:rgb(229, 241, 206);
-  padding: 1%;
+a{
+  text-decoration: none;
+  cursor: pointer;
 }
+
 
 /* NAVIGATION BAR */
 nav {
