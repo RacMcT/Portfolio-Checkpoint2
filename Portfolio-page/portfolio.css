@@ -5,6 +5,11 @@ body{
   font-family: 'Lato', sans-serif;
 }
 
+main a{
+  background-color:rgb(229, 241, 206);
+  padding: 1%;
+}
+
 a{
   text-decoration: none;
   cursor: pointer;
@@ -31,6 +36,13 @@ h1{
   margin-top: 0;
 }
 
+h2{
+  text-align: center;
+  text-shadow: 1px 1px  rgb(100, 199, 60);
+  background-color: rgb(229, 241, 206);
+  padding: 1%;
+  margin-top: 0;
+}
 
 /* NAVIGATION BAR */
 nav {
@@ -57,35 +69,8 @@ nav {
   color:black;
 }
 
-/*Hero Image */
-
-/* Container holding the image and the text */
-.container {
-  position: relative;
-  width: 100%;
-}
-
-/* Bottom right text */
-.text-block {
-  position: absolute;
-  top: 35%;
-  left: 33%;
-  background-color:  rgb(229, 241, 206);
-  opacity: 0.8;
-  color: black;
-  padding-left: 10%;
-  padding-right: 10%;
-  border-radius: 25px;
-}
-
 
 /*PORTFOLIO GALLERY */
-
-main a{
-  background-color:rgb(229, 241, 206);
-  padding: 1%;
-}
-
 
 
 /*FOOTER */
