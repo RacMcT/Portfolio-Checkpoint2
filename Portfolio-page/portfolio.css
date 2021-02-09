@@ -1,47 +1,46 @@
 /*BASIC STYLING */
-body{
+body {
   background-color: rgb(199, 204, 198);
   margin: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
-main a{
-  background-color:rgb(229, 241, 206);
+main a {
+  background-color: rgb(229, 241, 206);
   padding: 1%;
 }
 
-a{
+a {
   text-decoration: none;
   cursor: pointer;
-  }
+}
 
-a:hover{
+a:hover {
   background-color: rgb(100, 199, 60);
   color: black;
   cursor: pointer;
   border: solid 1px gold;
 }
 
-p{
+p {
   background-color: white;
   text-align: center;
   padding: 1%;
 }
 
-h1{
+h1 {
   text-align: center;
-  text-shadow: 1px 1px  rgb(100, 199, 60);
+  text-shadow: 1px 1px rgb(100, 199, 60);
   background-color: rgb(229, 241, 206);
   padding: 1%;
   margin-top: 0;
 }
 
-h2{
+h2 {
   text-align: center;
-  text-shadow: 1px 1px  rgb(100, 199, 60);
+  text-shadow: 1px 1px rgb(100, 199, 60);
   background-color: rgb(229, 241, 206);
   padding: 1%;
-  margin-top: 0;
 }
 
 /* NAVIGATION BAR */
@@ -57,61 +56,115 @@ nav {
   border-top: solid rgb(80, 77, 77) 1px;
 }
 
-.nav a{
+.nav a {
   color: black;
   padding: 1%;
 }
 
-
 /* Hide hamburger link that should open and close the nav on small screens */
 .nav .icon {
   display: none;
-  color:black;
+  color: black;
 }
-
 
 /*PORTFOLIO GALLERY */
 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+img {
+  width: 25vw;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-links {
+  display: flex;
+  justify-content: center;
+  padding: 2px;
+}
+
+.info-links a,
+button {
+  background-color: rgb(229, 241, 206);
+  color: black;
+  cursor: pointer;
+  padding: 5px;
+  text-align: left;
+  border: none;
+  outline: solid 1px black;
+  transition: 0.4s;
+  text-align: center;
+  font-size: 18px;
+  margin: 2px;
+}
+
+.info-links a:hover {
+  background-color: rgb(100, 199, 60);
+  border: solid 1px gold;
+}
+
+/* Background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+  background-color: rgb(100, 199, 60);
+  border: solid 1px gold;
+}
+
+/* Accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 5px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
 
 /*FOOTER */
-footer{
+footer {
   background-color: #444;
   padding: 10px;
 }
 
-.content{
+.content {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   padding: 1%;
 }
 
-footer span{
-  color:white;
+footer span {
+  color: white;
 }
 
-footer a{
+footer a {
   color: white;
   cursor: pointer;
 }
 
-footer a:hover{
+footer a:hover {
   background: rgb(34, 33, 33);
   padding: 0.5%;
   border: solid 1px gold;
 }
 
-
 /* Responsive Layout for Break-Points */
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
-  .nav{
+  .nav {
     display: flex;
     flex-direction: column;
   }
-  
-  .nav a:not(:first-child) {display: none;}
+
+  .nav a:not(:first-child) {
+    display: none;
+  }
 
   .nav .icon {
     float: right;
@@ -119,9 +172,11 @@ footer a:hover{
     padding-right: 5%;
   }
 
-/* The "responsive" class is added to the nav with JavaScript when the user clicks on the icon. This class makes the nav look good on small screens (display the links vertically instead of horizontally) */
+  /* The "responsive" class is added to the nav with JavaScript when the user clicks on the icon. This class makes the nav look good on small screens (display the links vertically instead of horizontally) */
 
-  .nav.responsive {position: relative;}
+  .nav.responsive {
+    position: relative;
+  }
   .nav.responsive .icon {
     position: absolute;
     right: 0;

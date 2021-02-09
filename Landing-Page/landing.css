@@ -1,17 +1,18 @@
 /*BASIC STYLING */
-body{
+body {
   background-color: rgb(199, 204, 198);
   margin: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
-a{text-decoration: none;}
+a {
+  text-decoration: none;
+}
 
-h2{
+h2 {
   text-align: center;
-  text-shadow: 1px 1px  rgb(100, 199, 60);
+  text-shadow: 1px 1px rgb(100, 199, 60);
 }
-
 
 /* NAVIGATION BAR */
 nav {
@@ -26,7 +27,7 @@ nav {
   border-top: solid rgb(80, 77, 77) 1px;
 }
 
-.nav a{
+.nav a {
   color: black;
   padding: 1%;
 }
@@ -42,7 +43,7 @@ nav {
 /* Hide hamburger link that should open and close the nav on small screens */
 .nav .icon {
   display: none;
-  color:black;
+  color: black;
 }
 
 /*Hero Image */
@@ -58,7 +59,7 @@ nav {
   position: absolute;
   top: 35%;
   left: 33%;
-  background-color:  rgb(229, 241, 206);
+  background-color: rgb(229, 241, 206);
   opacity: 0.8;
   color: black;
   padding-left: 10%;
@@ -66,28 +67,27 @@ nav {
   border-radius: 25px;
 }
 
-
-
 /*ABOUT SECTION */
-
 
 /* Buttons used to open and close the accordion panel */
 .accordion {
-  background-color:  rgb(229, 241, 206);
+  background-color: rgb(229, 241, 206);
   color: black;
   cursor: pointer;
-  padding: 18px;
+  padding: 20px;
   width: 100%;
   text-align: left;
   border: none;
-  outline: none;
+  outline: solid 1px black;
   transition: 0.4s;
   text-align: center;
+  font-size: 18px;
 }
 
 /* Background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-  background-color:  rgb(100, 199, 60);
+.active,
+.accordion:hover {
+  background-color: rgb(100, 199, 60);
   border: solid 1px gold;
 }
 
@@ -99,33 +99,33 @@ nav {
   overflow: hidden;
 }
 
-.list{
+.list {
   padding-left: 45%;
 }
 
 /*FOOTER */
-footer{
+footer {
   background-color: #444;
   padding: 10px;
 }
 
-.content{
+.content {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   padding: 1%;
 }
 
-footer span{
-  color:white;
+footer span {
+  color: white;
 }
 
-footer a{
+footer a {
   color: white;
   cursor: pointer;
 }
 
-footer a:hover{
+footer a:hover {
   background: rgb(34, 33, 33);
   padding: 0.5%;
   border: solid 1px gold;
@@ -135,12 +135,14 @@ footer a:hover{
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
-  .nav{
+  .nav {
     display: flex;
     flex-direction: column;
   }
-  
-  .nav a:not(:first-child) {display: none;}
+
+  .nav a:not(:first-child) {
+    display: none;
+  }
 
   .nav .icon {
     float: right;
@@ -148,9 +150,11 @@ footer a:hover{
     padding-right: 5%;
   }
 
-/* The "responsive" class is added to the nav with JavaScript when the user clicks on the icon. This class makes the nav look good on small screens (display the links vertically instead of horizontally) */
+  /* The "responsive" class is added to the nav with JavaScript when the user clicks on the icon. This class makes the nav look good on small screens (display the links vertically instead of horizontally) */
 
-  .nav.responsive {position: relative;}
+  .nav.responsive {
+    position: relative;
+  }
   .nav.responsive .icon {
     position: absolute;
     right: 0;
