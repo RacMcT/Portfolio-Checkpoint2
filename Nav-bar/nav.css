@@ -26,5 +26,5 @@ nav {
 /* Hide hamburger link that should open and close the nav on small screens */
 .nav .icon {
   display: none;
-  color:black
+  color:black;
 }
