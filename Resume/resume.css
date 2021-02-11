@@ -1,6 +1,6 @@
 /*BASIC STYLING */
 body {
-  background-color: rgb(199, 204, 198);
+  background-color: rgb(246, 248, 246);
   margin: 0;
   font-family: "Lato", sans-serif;
 }
@@ -24,17 +24,17 @@ p {
   margin: 0;
 }
 
-h2 {
+h1 {
   font-size: 6vh;
   text-align: center;
 }
 
-h3 {
+h2 {
   font-size: 4vh;
   color: #444;
 }
 
-h4 {
+h3 {
   font-size: 3vh;
   color: #444;
 }
